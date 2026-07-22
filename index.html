@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:antiquewhite;
+    padding:60px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+    text-align:center;
+    width:300px;
+}
+
+h2{
+    color:green;
+    
+}
+
+input{
+    width:90%;
+    padding:10px;
+    margin:15px 0;
+    font-size:18px;
+}
+
+button{
+    padding:10px 20px;
+    background:#00f2fe;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:gold;
+}
+
+#result{
+    margin-top:20px;
+    color:green;
+    
+}
+</style>
+
+    
+    <!-- <div class="container">
+        
+            <h1>KM to Mils Convert</h1>
+    
+        
+            <input type="number" id="Km" placeholder="Enter Kilometers">
+        
+            <button onclick="convert()">Convert</button>
+        
+            <h3 id="result"></h3>
+        
+    </div> -->
+<div class="container">
+    <h2>KM to Miles Converter</h2>
+
+    <input type="text" id="km" placeholder="Enter Kilometers">
+
+    <button onclick="convert()">Convert</button>
+
+    <h3 id="result"></h3>
+</div>
+
+<script>
+    function convert() {
+    let km = document.getElementById("km").value;
+
+     {
+        document.getElementById("result").innerHTML = "Please enter kilometers.";
+        
+    }
+
+    let Meters = km * 1000;
+
+    document.getElementById("result").innerHTML =
+        Meters + " Meters";
+}
+</script>
+
+
+
+   
+
+
+
+</body>
+</html>
